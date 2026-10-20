@@ -7,7 +7,7 @@ import tempfile
 import unittest
 from unittest.mock import patch
 from personas.__main__ import generate_demo, main
-from personas.data import load_reference, write_csv
+from personas.data import load_reference, write_csv, sha256
 from personas.metrics import summarize, rank_correlation
 from personas.providers import demo_response, llm_response, make_prompt, validate_response
 
@@ -27,6 +27,12 @@ class ProjectTests(unittest.TestCase):
         self.assertEqual(a.read_bytes(), self.csv.read_bytes())
         a = demo_response('value','refill','test',42,0)
         self.assertEqual(a, demo_response('value','refill','test',42,0))
+
+    def test_shipped_provenance_hashes(self):
+        example = Path(__file__).resolve().parents[1] / "examples/demo"
+        meta = json.loads((example / "metadata.json").read_text())
+        self.assertEqual(meta["reference_sha256"], sha256(example / "inputs/reference.csv"))
+        self.assertEqual(meta["manifest_sha256"], sha256(example / "inputs/manifest.json"))
 
     def test_rating_boundaries(self):
         for rating in ['nan','inf',0,6,2.5]:

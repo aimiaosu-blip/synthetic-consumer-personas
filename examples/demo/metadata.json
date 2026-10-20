@@ -5,7 +5,7 @@
   "model": "rule-v1",
   "seed": 42,
   "prompt_version": "needs-only-v1",
-  "reference_sha256": "866a8e9e79c8dd3db650b5a89e0c22a029dc562851a1f34d6b46f4997cff4ea5",
+  "reference_sha256": "60427a25edb638ca879f971e8dacea09fb99f5127f7be0daa9d73476b97b3aa7",
   "manifest_sha256": "7364182e281ff09afd2260409769ae060936527e4d3d8e6d961306373f2294c7",
   "manifest": {
     "source_type": "synthetic_demo",

@@ -54,6 +54,6 @@ def load_reference(path, manifest_path):
 
 def write_csv(path, rows, fields=FIELDS):
     with open(path, "w", newline="", encoding="utf-8") as stream:
-        writer = csv.DictWriter(stream, fieldnames=fields)
+        writer = csv.DictWriter(stream, fieldnames=fields, lineterminator="\n")
         writer.writeheader()
         writer.writerows(rows)
