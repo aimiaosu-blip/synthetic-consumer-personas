@@ -1,0 +1,5 @@
+{
+  "source_type": "synthetic_demo",
+  "seed": 42,
+  "description": "Fictional rule-generated benchmark; shares utility assumptions with simulator. Not independent validation."
+}

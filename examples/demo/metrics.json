@@ -1,0 +1,131 @@
+{
+  "n_respondents": 80,
+  "n_reference_pairs": 240,
+  "n_predictions": 720,
+  "runs": 3,
+  "mae_mean_prediction": 0.85,
+  "rmse_mean_prediction": 1.0745369373035203,
+  "signed_bias": 0.31666666666666665,
+  "exact_agreement_single_draw": 0.32361111111111107,
+  "within_one_single_draw": 0.7958333333333333,
+  "mean_within_pair_sd": 0.5764970698496646,
+  "repeat_exact_agreement": 0.425,
+  "mae_cluster_bootstrap_95_ci": [
+    0.7611111111111111,
+    0.9291666666666667
+  ],
+  "concept_spearman": 1.0,
+  "max_absolute_cell_bias": 0.75,
+  "cells": [
+    {
+      "persona_id": "comfort",
+      "concept_id": "essential",
+      "n": 20,
+      "reference_mean": 3.15,
+      "prediction_mean": 3.2666666666666666,
+      "signed_bias": 0.1166666666666667
+    },
+    {
+      "persona_id": "comfort",
+      "concept_id": "gentle",
+      "n": 20,
+      "reference_mean": 3.9,
+      "prediction_mean": 4.25,
+      "signed_bias": 0.3500000000000001
+    },
+    {
+      "persona_id": "comfort",
+      "concept_id": "refill",
+      "n": 20,
+      "reference_mean": 3.85,
+      "prediction_mean": 3.8333333333333335,
+      "signed_bias": -0.016666666666666607
+    },
+    {
+      "persona_id": "convenience",
+      "concept_id": "essential",
+      "n": 20,
+      "reference_mean": 2.7,
+      "prediction_mean": 3.25,
+      "signed_bias": 0.5499999999999998
+    },
+    {
+      "persona_id": "convenience",
+      "concept_id": "gentle",
+      "n": 20,
+      "reference_mean": 3.8,
+      "prediction_mean": 3.85,
+      "signed_bias": 0.050000000000000266
+    },
+    {
+      "persona_id": "convenience",
+      "concept_id": "refill",
+      "n": 20,
+      "reference_mean": 3.45,
+      "prediction_mean": 3.45,
+      "signed_bias": 0.0
+    },
+    {
+      "persona_id": "eco",
+      "concept_id": "essential",
+      "n": 20,
+      "reference_mean": 2.35,
+      "prediction_mean": 3.1,
+      "signed_bias": 0.75
+    },
+    {
+      "persona_id": "eco",
+      "concept_id": "gentle",
+      "n": 20,
+      "reference_mean": 3.2,
+      "prediction_mean": 3.533333333333333,
+      "signed_bias": 0.33333333333333304
+    },
+    {
+      "persona_id": "eco",
+      "concept_id": "refill",
+      "n": 20,
+      "reference_mean": 3.8,
+      "prediction_mean": 4.35,
+      "signed_bias": 0.5499999999999998
+    },
+    {
+      "persona_id": "value",
+      "concept_id": "essential",
+      "n": 20,
+      "reference_mean": 3.7,
+      "prediction_mean": 4.033333333333333,
+      "signed_bias": 0.33333333333333304
+    },
+    {
+      "persona_id": "value",
+      "concept_id": "gentle",
+      "n": 20,
+      "reference_mean": 2.85,
+      "prediction_mean": 3.4,
+      "signed_bias": 0.5499999999999998
+    },
+    {
+      "persona_id": "value",
+      "concept_id": "refill",
+      "n": 20,
+      "reference_mean": 3.6,
+      "prediction_mean": 3.833333333333333,
+      "signed_bias": 0.23333333333333295
+    }
+  ],
+  "concept_means": {
+    "essential": {
+      "reference": 2.975,
+      "prediction": 3.4125
+    },
+    "gentle": {
+      "reference": 3.4375,
+      "prediction": 3.7583333333333333
+    },
+    "refill": {
+      "reference": 3.675,
+      "prediction": 3.8666666666666667
+    }
+  }
+}

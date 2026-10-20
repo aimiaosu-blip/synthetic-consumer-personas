@@ -1,0 +1,1 @@
+Only synthetic inputs are shipped under examples/demo/inputs. Put future deidentified public inputs in data/imported/ (ignored). Read docs/DATA_CONTRACT.md before importing. No company or private consumer data belong in this public repository.

@@ -1,0 +1,1 @@
+# Python >=3.9. Standard library only; no paid API or pip packages needed for demo/tests.
